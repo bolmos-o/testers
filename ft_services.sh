@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl -I http://193.111.11.3
+curl -I http://192.168.49.3
 
 kubectl exec deploy/grafana -- pkill grafana
 kubectl exec deploy/ftps -- pkill vsftpd
