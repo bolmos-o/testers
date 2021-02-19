@@ -1,5 +1,8 @@
 #!/bin/bash
 
+find srcs/ -name Dockerfile
+cat srcs/*/Dockerfile | grep FROM
+
 curl -I http://192.168.49.3
 
 kubectl exec deploy/grafana -- pkill grafana
